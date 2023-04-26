@@ -119,7 +119,7 @@ int runCommand(char **lineTok, list_t **envHead)
 	list_t *tmp;
 
 	tmp = *envHead;
-	envArray = listToArray(&tmp);
+	envArray = list_to_array(&tmp);
 
 	if (envArray == NULL)
 	{
