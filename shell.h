@@ -113,7 +113,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 /* cmd_line_loops.c */
 
-int cmd_line_loop(char *buffer, char *line, list_t **env_head);
+int cmd-line-loops(char *buffer, char *line, list_t **env_head);
 
 /* run_commands */
 

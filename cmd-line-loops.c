@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * cmd_line_loop - This function loops until the user enters "exit"
+ * cmd-line-loops - This function loops until the user enters "exit"
  * or EOF(ctrl^D) by calling getline function.
  * @buffer: A pointer to buffer that stores input.
  * @line: A pointer to a string of line input.
@@ -13,7 +13,7 @@
  *
  */
 
-int cmd_line_loop(char *buffer, char *line, list_t **env_head)
+int cmd-line-loops(char *buffer, char *line, list_t **env_head)
 {
 	int chars_read, old_len, retval = 0;
 	char **line_tok;
