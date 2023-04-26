@@ -31,6 +31,7 @@ typedef struct built_in
 char *bi;
 int (*f)();
 } builtin_t;
+
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -39,8 +40,10 @@ int (*f)();
  *
  * Description: singly linked list node structure
  *
- * Project Authors: Owoyemi Damilola
+ * Project Authors: Owoyemi Damilola & Gbade Moses
+ *
  */
+
 typedef struct list_s
 {
 char *str;
