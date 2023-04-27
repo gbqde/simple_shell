@@ -16,7 +16,7 @@ return (1);
 line = NULL;
 env_head = array_to_list(environ);
 /* call cmd_line_loop */
-ret_val = cmd-line-loops(buffer, line, &env_head);
+ret_val = cmd_line_loops(buffer, line, &env_head);
 free_list(env_head);
 free(buffer);
 return (ret_val);

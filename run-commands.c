@@ -105,12 +105,12 @@ char *cmdInPath(char *str, list_t **envHead)
 }
 
 /**
- * runCommand - runs the command typed into shell prompt
+ * run_command - runs the command typed into shell prompt
  * @lineTok: tokenized input line
  * @envHead: pointer to environ list
  * Return: Always 0 on success, 1 on error
  */
-int runCommand(char **lineTok, list_t **envHead)
+int run_command(char **lineTok, list_t **envHead)
 {
 	pid_t childPid;
 	int status;
@@ -131,7 +131,7 @@ int runCommand(char **lineTok, list_t **envHead)
 
 	if (childPid == -1)
 	{
-		perror("runCommand: child pid is -1");
+		perror("run_command: child pid is -1");
 		free(envArray);
 		return (1);
 	}
